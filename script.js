@@ -25,6 +25,7 @@ setInterval(incrementSeconds, 1000);
 
 function incrementSeconds() {
     seconds.innerText = secondsArr[secondsIndex++]; 
+    amPm.innerText = 'AM'; 
         if (secondsIndex == secondsArr.length) {
             setTimeout(incrementMinutes, 1000);  
            return secondsIndex = 0;  
@@ -46,8 +47,8 @@ function incrementMinutes() {
 function incrementHours() {
     hours.innerText = hoursArr[hoursIndex++]; 
     if (hoursIndex == hoursArr.length) {
+        amPm.innerText = 'PM'; 
         return hoursIndex = 0; 
     }
-}
+}; 
 
-console.log(hoursArr.length); 

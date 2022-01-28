@@ -14,7 +14,8 @@ body {
     flex-direction: column;
     font-size: 45px;
     gap: 6rem;
-    background: linear-gradient(#b6b5b9, #565558);
+    background: linear-gradient(#9AC9EE , #F8ED9A );
+    color: #7a786a ;
 }
 
 #header {
@@ -28,10 +29,10 @@ body {
     gap: 2rem;
     /* width: 800px;
     max-width: 80%; */
-    background-color: #c9c3d6;
+    background-color: #F1F0E4 ;
     border-radius: 10px;
     padding: 15px;
-    box-shadow: 7px 5px 15px 3px #000000;
+    box-shadow: 7px 5px 15px 3px #4b4a4a;
 }
 
 #time-container {
@@ -59,7 +60,7 @@ body {
 }
 
 #btn:hover {
-    background-color: #cbcace;
+    background-color: #dddddf;
     cursor: pointer;
 }
 

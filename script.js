@@ -44,7 +44,6 @@ setInterval(incrementSeconds, 1000);
 
 function incrementSeconds() {
     seconds.innerText = secondsArr[secondsIndex++]; 
-    greetingMessage.innerText = 'Good Morning'
     // amPm.innerText = 'AM'; 
         if (secondsIndex == secondsArr.length) {
             setTimeout(incrementMinutes, 1000);  
@@ -68,17 +67,19 @@ function incrementHours() {
     hours.innerText = hoursArr[hoursIndex++]; 
     if (hoursIndex == hoursArr.length) {
         // amPm.innerText = 'PM'; 
-        greetingMessage.innerText = 'Good Afternoon'
         return hoursIndex = 0; 
     }
     removeAmPm(); 
 }; 
 
+//TOGGLE AM/PM
 function removeAmPm() {
     if (hoursIndex <= 11) {
         amPm.innerText = 'AM'; 
+        greetingMessage.innerText = 'Good Morning'
     } else {
         amPm.innerText = 'PM'; 
+        greetingMessage.innerText = 'Good Afternoon'
     }
 }
 
